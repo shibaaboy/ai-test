@@ -3,7 +3,7 @@ export const validateRegExp =
     (regExp: RegExp, reverse = false) =>
     (_: any, val: string) => {
         if (reverse !== regExp.test(val)) {
-            return Promise.resolve();
+            return Promise.reject();
         }
-        return Promise.reject();
+        return Promise.resolve();
     };

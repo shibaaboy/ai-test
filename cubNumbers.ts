@@ -1,6 +1,6 @@
 // Function to add two numbers 
 const cubNumbers = (a) => { 
-  return a ** 2; 
+  return a ** 3; 
 }
 
 console.log('test', cubNumbers(5));
